@@ -1,38 +1,129 @@
 html, body {
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
 }
-
 .wrapper {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    text-decoration: none;
+}
+h3{
+    text-align:right;
+    color: rgb(5, 108, 108);
+    margin-right: 15px;
+    font-size: 30px;
 }
 .main {
     display: flex;
     flex-flow: column;
     width: 85%;
 }
+
+.main img{
+    float: left;
+    padding: 15px;
+}
 .menu {
-    width: 15%;
-    background-color: aqua;
+    width: 18%;
+    background-color: rgb(255, 255, 255);
     padding: 10px 20px 0px;
+    border: 6px solid rgb(5, 108, 108);
+    font-style: normal;
+}
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+
+}
+ul li a{
+    color: rgb(5, 108, 108);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
 }
 .header {
     background-color: rgb(5, 108, 108);
     min-height: 150px;
+    color: rgb(5, 108, 108);
+    background-image: url(assets/header-inicial.jpg);
+
+    background-position: right 40% bottom 60%;
 }
 .content {
-    background-color: white;
-    min-height: 300px;
+    background-color: rgb(193, 245, 202);
+    min-height: 150px;
     padding: 20px;
 }
+.sobre{
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: justify;
+}
+.content h2,.footer h2, h1 {
+    color: rgb(5, 108, 108);
+    font-size: 20px;
+    text-align: center;
+}
+
+.content th, td{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 108, 108);
+}
+.content li{
+    font-weight: 500;
+    background-color: rgb(5, 108, 108);
+    color: rgb(255, 255, 255);
+
+}
+.content ul, iframe{
+    display: block;
+    justify-items: center;
+    text-align: center;
+    margin-left: 50px;
+}
+table{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.footer h2 {
+    color: white;
+    font-size: 20px;
+}
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: rgb(5, 108, 108);
+    border: 3px solid white;
+    color: white;
+    padding: 15px;
     min-height: 150px;
+}
+.contato-img{
+    padding: 15px;
+    text-align: center;
+}
+.formulario {
+    color: rgb(5, 108, 108);
+    box-shadow: -6px 9px 33px -10px rgba(0,0,0,0.75);
+    justify-content: center;
+    display: flex;
+}
+input, textarea{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(4, 139, 76);
+    border-radius: 10px ;
+    display: block;
+    margin: 0;
+    padding: 15px;
+    width: 300px;
 }
